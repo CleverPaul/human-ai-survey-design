@@ -1,0 +1,115 @@
+{
+  "scope": "Synthetic model/implementation audit, not real-data validation",
+  "joint_conditioning_checks": [
+    {
+      "max_Q_error": 3.157196726277789e-16,
+      "max_mean_error": 8.049116928532385e-16,
+      "minimum_Q_eigenvalue": 0.051382438316400554,
+      "human_error_mean_norm": 0.9214871112766733,
+      "human_AI_cross_block_norm": 0.14029499346415997,
+      "exact_model_MSE": 0.029506169349649995,
+      "two_risk_upper_bound": 0.05962544784806306,
+      "representation_distance": 0.06792446956764106,
+      "W1_two_risk_upper_bound": 0.136327209875307,
+      "fixed_simulation_truth_conditional_MSE_assessment_only": 0.029092613886102424
+    },
+    {
+      "max_Q_error": 2.498001805406602e-16,
+      "max_mean_error": 4.996003610813204e-16,
+      "minimum_Q_eigenvalue": 0.05138243831640052,
+      "human_error_mean_norm": 0.7144910859815438,
+      "human_AI_cross_block_norm": 0.14226540915168526,
+      "exact_model_MSE": 0.029181735513133866,
+      "two_risk_upper_bound": 0.05901480929929366,
+      "representation_distance": 0.07053206995540834,
+      "W1_two_risk_upper_bound": 0.1419936007179548,
+      "fixed_simulation_truth_conditional_MSE_assessment_only": 0.012402817898151862
+    },
+    {
+      "max_Q_error": 3.8337388819087437e-16,
+      "max_mean_error": 8.326672684688674e-16,
+      "minimum_Q_eigenvalue": 0.051382438316400554,
+      "human_error_mean_norm": 0.7392559836344056,
+      "human_AI_cross_block_norm": 0.14173669911367204,
+      "exact_model_MSE": 0.028093327989756566,
+      "two_risk_upper_bound": 0.0578202101941001,
+      "representation_distance": 0.07232906897625828,
+      "W1_two_risk_upper_bound": 0.1453979089921263,
+      "fixed_simulation_truth_conditional_MSE_assessment_only": 0.007905591267023096
+    }
+  ],
+  "human_distance_checks": [
+    {
+      "geometry": "full_transport",
+      "epsilon_H": 0.16193607095555995,
+      "independent_LP_error": 0.0,
+      "recomputed_distance_error": 0.0
+    },
+    {
+      "geometry": "stratified_w1",
+      "epsilon_H": 0.16193607095555995,
+      "independent_LP_error": 0.0,
+      "recomputed_distance_error": 0.0
+    },
+    {
+      "geometry": "full_transport",
+      "epsilon_H": 0.15289326862295682,
+      "independent_LP_error": 0.0,
+      "recomputed_distance_error": 0.0
+    },
+    {
+      "geometry": "stratified_w1",
+      "epsilon_H": 0.15289326862295682,
+      "independent_LP_error": 0.0,
+      "recomputed_distance_error": 0.0
+    },
+    {
+      "geometry": "full_transport",
+      "epsilon_H": 0.15030355757985767,
+      "independent_LP_error": 2.7755575615628914e-17,
+      "recomputed_distance_error": 0.0
+    },
+    {
+      "geometry": "stratified_w1",
+      "epsilon_H": 0.15030355757985767,
+      "independent_LP_error": 2.7755575615628914e-17,
+      "recomputed_distance_error": 2.7755575615628914e-17
+    }
+  ],
+  "cross_group_transport_case": [
+    {
+      "geometry": "full_transport",
+      "epsilon_H": 0.5,
+      "independent_LP_error": 0.0,
+      "recomputed_distance_error": 0.0
+    },
+    {
+      "geometry": "stratified_w1",
+      "epsilon_H": 0.8,
+      "independent_LP_error": 0.0,
+      "recomputed_distance_error": 0.0
+    }
+  ],
+  "basis_columns": 18,
+  "basis_rank": 14,
+  "coverage_nonmonotonicity_example": {
+    "seed": 6,
+    "coverage": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "epsilon_H": [
+      0.3050151151297465,
+      0.19745349017306682,
+      0.13198690207103725,
+      0.10630141564198176,
+      0.07402454471899718,
+      0.082475889236498
+    ]
+  },
+  "status": "all numerical assertions passed"
+}

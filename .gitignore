@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.lic
+node_modules/
+.devtools/
+.pytest_cache/
+results/local_*
+dist/
+build/

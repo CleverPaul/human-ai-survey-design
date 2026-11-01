@@ -1,0 +1,304 @@
+{
+  "method": "QWebEngineView.grab of the real local desktop interface",
+  "screenshots": [
+    {
+      "file": "overview.png",
+      "width": 1280,
+      "height": 2047,
+      "viewport_region": null
+    },
+    {
+      "file": "bias-and-uncertainty.png",
+      "width": 884,
+      "height": 464,
+      "viewport_region": {
+        "x": 333,
+        "y": 268.625,
+        "width": 884,
+        "height": 463.65625
+      }
+    },
+    {
+      "file": "optimized-design-and-frontier.png",
+      "width": 884,
+      "height": 1409,
+      "viewport_region": {
+        "x": 333,
+        "y": 868.28125,
+        "width": 884,
+        "height": 1409
+      }
+    }
+  ],
+  "scenario": {
+    "seed": 42,
+    "coverage": 0.45,
+    "n_human": 12,
+    "n_target": 8,
+    "noise": 0.35,
+    "geometry": "full_transport"
+  },
+  "solution": {
+    "budget": 3,
+    "tolerance": 0.08,
+    "config": {
+      "seed": 42,
+      "coverage": 0.45,
+      "n_human": 12,
+      "n_target": 8,
+      "noise": 0.35,
+      "geometry": "full_transport"
+    },
+    "solver": "SCIP convex MIQCP",
+    "solver_license": "open_source",
+    "status": "optimal",
+    "gap": 4.1315252985642223e-08,
+    "objective_bound": 0.021538105392650324,
+    "baselines": {
+      "unweighted": {
+        "name": "Unweighted human responses",
+        "wh": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333
+        ],
+        "ws": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "estimated_mean": 3.546418246100556,
+        "response_risk": 0.010198765700906004,
+        "representation_distance": 0.31090358774314514,
+        "true_target_mean": 3.6750000000000003,
+        "absolute_error_assessment": 0.12858175389944426,
+        "conditional_response_mean": -0.018452994480984863,
+        "conditional_response_variance": 0.009858252695590746,
+        "representation_bias_assessment": -0.05096405007272198,
+        "conditional_total_mse_assessment": 0.014676978770162066,
+        "conditional_mse_scope": "Fitted bias-posterior conditional MSE using simulated true f for assessment; not oracle MSE under the fixed simulator bias.",
+        "feasible": false
+      },
+      "human_only": {
+        "name": "Optimally reweighted humans under the same representation constraint",
+        "min_representation_distance": 0.15289326862295682,
+        "feasible": false
+      }
+    },
+    "true_target_mean": 3.6750000000000003,
+    "diagnostics": {
+      "solver_attempts": [],
+      "truth_used_for_fit_or_design": false,
+      "Q_min_eigenvalue": 0.05138243831640052,
+      "fresh_AI_variance_included_once": true,
+      "reuse_cross_covariance_retained": true,
+      "geometry": "full_transport",
+      "one_response_per_selected_profile": true,
+      "variable_count": 189,
+      "quadratic_constraints": 1,
+      "solver_status": "optimal",
+      "outer_iterations": null,
+      "simplex_error": 2.220446049250313e-16,
+      "activation_violation": 0,
+      "representation_feasible": true,
+      "group_1_mass": 0.5000000142359098
+    },
+    "selected_indices": [
+      3,
+      5,
+      7
+    ],
+    "selection": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "wh": [
+      0.12499999122731278,
+      8.301374789176538e-09,
+      0.03763882489783735,
+      0.04250889931041605,
+      0.04485226441475235,
+      4.501289512277234e-08,
+      0.0012038616529714834,
+      0.04199388675214953,
+      0.12615541003787858,
+      0.12499999518079814,
+      0.07245468149329279,
+      0.14128259936286733
+    ],
+    "ws": [
+      0,
+      0,
+      0,
+      0.08064679415650224,
+      0,
+      0.052545337034364474,
+      0,
+      0.10871740116458707
+    ],
+    "weights": [
+      0.12499999122731278,
+      8.301374789176538e-09,
+      0.03763882489783735,
+      0.04250889931041605,
+      0.04485226441475235,
+      4.501289512277234e-08,
+      0.0012038616529714834,
+      0.04199388675214953,
+      0.12615541003787858,
+      0.12499999518079814,
+      0.07245468149329279,
+      0.14128259936286733,
+      0,
+      0,
+      0,
+      0.08064679415650224,
+      0,
+      0.052545337034364474,
+      0,
+      0.10871740116458707
+    ],
+    "objective": 0.021538106282502634,
+    "budget_used": 3,
+    "silicon_mass": 0.24190953235545376,
+    "selected_responses": [
+      {
+        "index": 3,
+        "raw": 3.841763004424864,
+        "correction": 0.27950525590650144,
+        "corrected": 3.5622577485183626,
+        "weight": 0.08064679415650224
+      },
+      {
+        "index": 5,
+        "raw": 4.767541658533893,
+        "correction": 0.758757837050125,
+        "corrected": 4.008783821483767,
+        "weight": 0.052545337034364474
+      },
+      {
+        "index": 7,
+        "raw": 4.603924478862211,
+        "correction": 0.44699901772922485,
+        "corrected": 4.156925461132986,
+        "weight": 0.10871740116458707
+      }
+    ],
+    "estimated_mean": 3.687722657741859,
+    "response_risk": 0.021538106282502634,
+    "representation_distance": 0.0800000371515592,
+    "absolute_error_assessment": 0.012722657741858878,
+    "conditional_response_mean": 0.00016273935486014503,
+    "conditional_response_variance": 0.021538079798405014,
+    "representation_bias_assessment": 0.048996122269017395,
+    "conditional_total_mse_assessment": 0.023954673474560553,
+    "conditional_mse_scope": "Fitted bias-posterior conditional MSE using simulated true f for assessment; not oracle MSE under the fixed simulator bias.",
+    "elapsed_seconds": 0.4021428999985801
+  },
+  "frontier": {
+    "budget": 3,
+    "points": [
+      {
+        "tolerance": 0.025,
+        "status": "infeasible",
+        "gap": null,
+        "objective": null,
+        "response_risk": null,
+        "representation_distance": null,
+        "budget_used": 0
+      },
+      {
+        "tolerance": 0.04,
+        "status": "optimal",
+        "gap": 2.7517381006040116e-08,
+        "objective": 0.03279598774725591,
+        "budget_used": 3,
+        "silicon_mass": 0.35558985419694383,
+        "response_risk": 0.03279598774725591,
+        "representation_distance": 0.04
+      },
+      {
+        "tolerance": 0.06,
+        "status": "optimal",
+        "gap": 3.3860491495062886e-08,
+        "objective": 0.025980012422213122,
+        "budget_used": 3,
+        "silicon_mass": 0.3047026202546553,
+        "response_risk": 0.025980012422213122,
+        "representation_distance": 0.06000003095804272
+      },
+      {
+        "tolerance": 0.08,
+        "status": "optimal",
+        "gap": 4.1315252985642223e-08,
+        "objective": 0.021538106282502634,
+        "budget_used": 3,
+        "silicon_mass": 0.24190953235545376,
+        "response_risk": 0.021538106282502634,
+        "representation_distance": 0.0800000371515592
+      },
+      {
+        "tolerance": 0.12,
+        "status": "optimal",
+        "gap": 5.715449215641364e-08,
+        "objective": 0.015627538684169953,
+        "budget_used": 3,
+        "silicon_mass": 0.13477478233417892,
+        "response_risk": 0.015627538684169953,
+        "representation_distance": 0.11999999999999997
+      },
+      {
+        "tolerance": 0.16,
+        "status": "optimal",
+        "gap": 7.070225872710488e-08,
+        "objective": 0.01286248061202238,
+        "budget_used": 3,
+        "silicon_mass": 0.07873926141625663,
+        "response_risk": 0.01286248061202238,
+        "representation_distance": 0.16000000000000003
+      },
+      {
+        "tolerance": 0.25,
+        "status": "optimal",
+        "gap": 9.33041424753273e-08,
+        "objective": 0.010177705983917944,
+        "budget_used": 3,
+        "silicon_mass": 0.03368070208191654,
+        "response_risk": 0.010177705983917944,
+        "representation_distance": 0.2500000000000001
+      },
+      {
+        "tolerance": 0.35,
+        "status": "time_limit",
+        "gap": 0.012780655646405069,
+        "objective": 0.009837722569285718,
+        "budget_used": 3,
+        "silicon_mass": 0.017131875297066675,
+        "response_risk": 0.009837722569285718,
+        "representation_distance": 0.2989263113657837
+      }
+    ]
+  },
+  "error": null,
+  "transport": "QWebChannel with local file:// assets"
+}

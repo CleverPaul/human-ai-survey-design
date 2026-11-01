@@ -1,0 +1,66 @@
+{
+  "packages": {
+    "PySide6": "6.8.3",
+    "PySide6_Addons": "6.8.3",
+    "PySide6_Essentials": "6.8.3",
+    "shiboken6": "6.8.3",
+    "numpy": "2.2.5",
+    "scipy": "1.15.3",
+    "pyscipopt": "6.3.0",
+    "pyinstaller": "6.22.3"
+  },
+  "upstream": {
+    "Qt/LGPL-3.0-only.txt": {
+      "url": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/LGPL-3.0-only.txt",
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+    },
+    "Qt/GPL-3.0-only.txt": {
+      "url": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/GPL-3.0-only.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "Qt/LGPL-2.1-only.txt": {
+      "url": "https://raw.githubusercontent.com/spdx/license-list-data/v3.27.0/text/LGPL-2.1-only.txt",
+      "sha256": "5749785c8bdefafcb5d798270ed0a967036fe2ca63dcedade1627565dfef81d2"
+    },
+    "Qt/Qt-GPL-exception-1.0.txt": {
+      "url": "https://raw.githubusercontent.com/qt/qtbase/v6.8.3/LICENSES/Qt-GPL-exception-1.0.txt",
+      "sha256": "40678d338ce53cd93f8b22b281a2ecbcaa3ee65ce60b25ffb0c462b0530846b2"
+    },
+    "SCIP/LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/scipopt/scip/v10.0.2/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "SoPlex/LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/scipopt/soplex/v8.0.2/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "Ipopt/LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/coin-or/Ipopt/releases/3.14.19/LICENSE",
+      "sha256": "0becf16567beb77fa252b7664631dd177c8f9a1889e48995b45379c7130e5303"
+    },
+    "COIN-MUMPS/LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/coin-or-tools/ThirdParty-Mumps/releases/3.0.8/LICENSE",
+      "sha256": "29e7b414f74c59a451641f757d830da1d0a4ab62a6f968e6ce9eb68933aa6429"
+    },
+    "MUMPS-5.8.0/CECILL-C.txt": {
+      "url": "https://raw.githubusercontent.com/spdx/license-list-data/v3.27.0/text/CECILL-C.txt",
+      "sha256": "7b00493e6580710aad04faf2747d74b6de840a47183f76f5a3645f1fce69245d"
+    },
+    "SCIP/build-provenance.txt": {
+      "url": "https://raw.githubusercontent.com/scipopt/scipoptsuite-deploy/v0.12.0/.github/workflows/scripts/windows.bash",
+      "sha256": "31159bbb41435ad31795cf5651f03d9b191904ad52087c657a4ef0e55f7d537d"
+    }
+  },
+  "qt_source_notices": {
+    "QtBase": {
+      "source_url": "https://download.qt.io/archive/qt/6.8/6.8.3/submodules/qtbase-everywhere-src-6.8.3.tar.xz",
+      "source_sha256": "56001b905601bb9023d399f3ba780d7fa940f3e4861e496a7c490331f49e0b80",
+      "license_file_count": 157
+    },
+    "QtWebEngine": {
+      "source_url": "https://download.qt.io/archive/qt/6.8/6.8.3/submodules/qtwebengine-everywhere-src-6.8.3.tar.xz",
+      "source_sha256": "df4e19ba2b3a540551b6f998d62597377ffa688c1cff564589b7da2e2bf87337",
+      "license_file_count": 2229
+    }
+  }
+}

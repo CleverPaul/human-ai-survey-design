@@ -1,0 +1,262 @@
+{
+  "date": "2026-11-01",
+  "build": {
+    "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.2.5",
+      "scipy": "1.15.3",
+      "pyscipopt": "6.3.0",
+      "PySide6": "6.8.3",
+      "PySide6_Addons": "6.8.3",
+      "PySide6_Essentials": "6.8.3",
+      "shiboken6": "6.8.3",
+      "pyinstaller": "6.22.3",
+      "pyinstaller-hooks-contrib": "2026.9"
+    },
+    "artifacts": {
+      "SurveyDesignLab.exe": {
+        "bytes": 240868138,
+        "sha256": "4d8f6ade41a08234404674549c9f58173cce3c42773e2bbcbe860781b9e538db"
+      },
+      "SurveyDesignLab/SurveyDesignLab.exe": {
+        "bytes": 7126442,
+        "sha256": "9c3701d57c357055db91226701740e52335ca224cac55dda0cfee7ac2b25b510"
+      },
+      "SurveyDesignLab-portable.zip": {
+        "bytes": 242279795,
+        "sha256": "c4eb774cbd0e631b73d99f0c7bba07fe4805645a08b72befc358f6d2a5b6c100"
+      }
+    }
+  },
+  "runs": {
+    "onedir": {
+      "ok": true,
+      "frozen": true,
+      "launch_check": {
+        "clean_temporary_working_directory": true,
+        "path_contains_only_windows_system_directories": true,
+        "python_conda_gurobi_qt_environment_removed": true,
+        "separate_clean_windows_machine_tested": false,
+        "process_exit_code": 0,
+        "wall_seconds_including_bootloader": 18.944
+      },
+      "default": {
+        "solver": "SCIP convex MIQCP",
+        "status": "optimal",
+        "objective": 0.021538106282502634,
+        "objective_bound": 0.021538105392650324,
+        "gap": 4.1315252985642223e-08,
+        "selected_indices": [
+          3,
+          5,
+          7
+        ],
+        "silicon_mass": 0.24190953235545376,
+        "representation_distance": 0.0800000371515592,
+        "budget_used": 3
+      },
+      "changed_budget": 4,
+      "export_matrix_dimension": 20,
+      "frontier": {
+        "budget": 4,
+        "points": [
+          {
+            "tolerance": 0.025,
+            "status": "optimal",
+            "gap": 2.065678641043034e-08,
+            "objective": 0.03990233168412449,
+            "budget_used": 4,
+            "silicon_mass": 0.48712319970274154,
+            "response_risk": 0.03990233168412449,
+            "representation_distance": 0.025000032838600066
+          },
+          {
+            "tolerance": 0.04,
+            "status": "optimal",
+            "gap": 2.8064116938308777e-08,
+            "objective": 0.03144239041992835,
+            "budget_used": 4,
+            "silicon_mass": 0.40455340043150184,
+            "response_risk": 0.03144239041992835,
+            "representation_distance": 0.04000003944838264
+          },
+          {
+            "tolerance": 0.06,
+            "status": "optimal",
+            "gap": 2.7021981392586327e-08,
+            "objective": 0.025589540288740945,
+            "budget_used": 4,
+            "silicon_mass": 0.3464933787443083,
+            "response_risk": 0.025589540288740945,
+            "representation_distance": 0.06
+          },
+          {
+            "tolerance": 0.08,
+            "status": "optimal",
+            "gap": 4.187035881372349e-08,
+            "objective": 0.02125609795461063,
+            "budget_used": 4,
+            "silicon_mass": 0.27833878659950617,
+            "response_risk": 0.02125609795461063,
+            "representation_distance": 0.0800000402355677
+          },
+          {
+            "tolerance": 0.12,
+            "status": "optimal",
+            "gap": 5.636063003803347e-08,
+            "objective": 0.015525464985764402,
+            "budget_used": 4,
+            "silicon_mass": 0.15559948171665,
+            "response_risk": 0.015525464985764402,
+            "representation_distance": 0.12
+          },
+          {
+            "tolerance": 0.16,
+            "status": "optimal",
+            "gap": 5.80892844177129e-08,
+            "objective": 0.01283794461747062,
+            "budget_used": 4,
+            "silicon_mass": 0.09020103840310102,
+            "response_risk": 0.01283794461747062,
+            "representation_distance": 0.15999999999999995
+          },
+          {
+            "tolerance": 0.25,
+            "status": "optimal",
+            "gap": 9.05046744116536e-08,
+            "objective": 0.010171414967845741,
+            "budget_used": 4,
+            "silicon_mass": 0.03962018300548203,
+            "response_risk": 0.010171414967845741,
+            "representation_distance": 0.24999999999999847
+          },
+          {
+            "tolerance": 0.35,
+            "status": "time_limit",
+            "gap": 0.018183957079439164,
+            "objective": 0.00983491970723349,
+            "budget_used": 4,
+            "silicon_mass": 0.019227804105245154,
+            "response_risk": 0.00983491970723349,
+            "representation_distance": 0.2984371555601125
+          }
+        ]
+      }
+    },
+    "onefile": {
+      "ok": true,
+      "frozen": true,
+      "launch_check": {
+        "clean_temporary_working_directory": true,
+        "path_contains_only_windows_system_directories": true,
+        "python_conda_gurobi_qt_environment_removed": true,
+        "separate_clean_windows_machine_tested": false,
+        "process_exit_code": 0,
+        "wall_seconds_including_bootloader": 21.101
+      },
+      "default": {
+        "solver": "SCIP convex MIQCP",
+        "status": "optimal",
+        "objective": 0.021538106282502634,
+        "objective_bound": 0.021538105392650324,
+        "gap": 4.1315252985642223e-08,
+        "selected_indices": [
+          3,
+          5,
+          7
+        ],
+        "silicon_mass": 0.24190953235545376,
+        "representation_distance": 0.0800000371515592,
+        "budget_used": 3
+      },
+      "changed_budget": 4,
+      "export_matrix_dimension": 20,
+      "frontier": {
+        "budget": 4,
+        "points": [
+          {
+            "tolerance": 0.025,
+            "status": "optimal",
+            "gap": 2.065678641043034e-08,
+            "objective": 0.03990233168412449,
+            "budget_used": 4,
+            "silicon_mass": 0.48712319970274154,
+            "response_risk": 0.03990233168412449,
+            "representation_distance": 0.025000032838600066
+          },
+          {
+            "tolerance": 0.04,
+            "status": "optimal",
+            "gap": 2.8064116938308777e-08,
+            "objective": 0.03144239041992835,
+            "budget_used": 4,
+            "silicon_mass": 0.40455340043150184,
+            "response_risk": 0.03144239041992835,
+            "representation_distance": 0.04000003944838264
+          },
+          {
+            "tolerance": 0.06,
+            "status": "optimal",
+            "gap": 2.7021981392586327e-08,
+            "objective": 0.025589540288740945,
+            "budget_used": 4,
+            "silicon_mass": 0.3464933787443083,
+            "response_risk": 0.025589540288740945,
+            "representation_distance": 0.06
+          },
+          {
+            "tolerance": 0.08,
+            "status": "optimal",
+            "gap": 4.187035881372349e-08,
+            "objective": 0.02125609795461063,
+            "budget_used": 4,
+            "silicon_mass": 0.27833878659950617,
+            "response_risk": 0.02125609795461063,
+            "representation_distance": 0.0800000402355677
+          },
+          {
+            "tolerance": 0.12,
+            "status": "optimal",
+            "gap": 5.636063003803347e-08,
+            "objective": 0.015525464985764402,
+            "budget_used": 4,
+            "silicon_mass": 0.15559948171665,
+            "response_risk": 0.015525464985764402,
+            "representation_distance": 0.12
+          },
+          {
+            "tolerance": 0.16,
+            "status": "optimal",
+            "gap": 5.80892844177129e-08,
+            "objective": 0.01283794461747062,
+            "budget_used": 4,
+            "silicon_mass": 0.09020103840310102,
+            "response_risk": 0.01283794461747062,
+            "representation_distance": 0.15999999999999995
+          },
+          {
+            "tolerance": 0.25,
+            "status": "optimal",
+            "gap": 9.05046744116536e-08,
+            "objective": 0.010171414967845741,
+            "budget_used": 4,
+            "silicon_mass": 0.03962018300548203,
+            "response_risk": 0.010171414967845741,
+            "representation_distance": 0.24999999999999847
+          },
+          {
+            "tolerance": 0.35,
+            "status": "time_limit",
+            "gap": 0.018183957079439164,
+            "objective": 0.00983491970723349,
+            "budget_used": 4,
+            "silicon_mass": 0.019227804105245154,
+            "response_risk": 0.00983491970723349,
+            "representation_distance": 0.2984371555601125
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+# License-free Python/browser demo, also usable on macOS and Linux.
+numpy==2.2.5
+scipy==1.15.3
+PySCIPOpt==6.3.0
