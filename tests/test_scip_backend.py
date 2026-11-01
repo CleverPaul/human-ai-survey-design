@@ -93,8 +93,16 @@ class SCIPBackendTests(unittest.TestCase):
         r = solve_design(sc, 5, .08, backend="scip", time_limit=.1)
         self.assertIn(r["status"], ("optimal", "optimal_within_tolerance", "time_limit"))
         if r["objective"] is not None:
-            self.assertLessEqual(r["objective_bound"], r["objective"] + 1e-7)
-            self.assertGreaterEqual(r["gap"], 0.)
+            if r["objective_bound"] is None:
+                self.assertEqual(r["status"], "time_limit")
+            else:
+                self.assertLessEqual(r["objective_bound"], r["objective"] + 1e-7)
+            # A very short run can leave SCIP's relative gap undefined/infinite.
+            # The JSON API reports this honestly as null, without certification.
+            if r["gap"] is None:
+                self.assertEqual(r["status"], "time_limit")
+            else:
+                self.assertGreaterEqual(r["gap"], 0.)
             if r["status"] == "optimal":
                 self.assertLessEqual(r["gap"], 1e-6)
         self.assertEqual(r["diagnostics"]["solver_status"] == "timelimit",
