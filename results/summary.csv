@@ -1,4 +1,0 @@
-method,feasible_at_tolerance,response_risk,representation_distance,minimum_achievable_distance,estimated_mean,true_target_mean,absolute_error_one_realization
-unweighted_human,False,0.010198765700906018,0.31090358774314514,,3.546418246100556,3.6750000000000003,0.12858175389944426
-reweighted_human,False,,,0.15289326862295682,,3.6750000000000003,
-designed_human_AI,True,0.021538113381858636,0.07999999999999999,,3.687722621894703,3.6750000000000003,0.012722621894702524
